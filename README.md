@@ -46,11 +46,13 @@ Link to a read-only version of your scope document or other relevant documentati
 - [ ] Redux stores feedback data across views.
 - [ ] Each part of the form is in its own route.
 - [ ] Clicking next moves the user to the appropriate step​.
-- [ ] A *Review* component displays the results of each step clearly at all times.
-- [ ] When the form is completely filled out, a submit button sends the completed feedback to the database.
-- [ ] A success page confirms the data has been added.
+- [ ] Each step only allows the user to advance to the next step if a score was provided.
+- [ ] The final step of the process allows the user to review their feedback before submitting.
+- [ ] A submit button sends the completed feedback to the database and redirects to a success page.
+- [ ] The user can take a new survey from the success page.
 
 ### Next Steps
+- [ ] Allow the user to go back to an earlier step and change their score.
 - [ ] Display all of the existing feedback at the route `/admin`. The most recently added feedback should appear at the top of the list. Allow the user to delete existing feedback. Prompt the user to confirm prior to deleting the feedback from the database.
 - [ ] Update this README.md to describe the project.
 - [ ] Improve the styling of the app using Material-UI.
