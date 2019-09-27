@@ -17,7 +17,6 @@ Link to software that is required before you attempt to start the app (e.g. node
 - [Node.js](https://nodejs.org/en/)
 - List other prerequisites here
 ​
-​
 ### Installing
 ​
 Steps to get the development environment running.
@@ -37,7 +36,6 @@ Include one or two screen shots of your project here (optional). Remove if unuse
 Link to a read-only version of your scope document or other relevant documentation here (optional). Remove if unused.
 ​
 ### Completed Features
-​​
 - [ ] A multi-part form allows users to leave feedback for today.
 - **There are 4 views for the form parts:**
 - [ ] How are you feeling today?
@@ -53,7 +51,6 @@ Link to a read-only version of your scope document or other relevant documentati
 - [ ] A success page confirms the data has been added.
 
 ### Next Steps
-​
 - [ ] Display all of the existing feedback at the route `/admin`. The most recently added feedback should appear at the top of the list. Allow the user to delete existing feedback. Prompt the user to confirm prior to deleting the feedback from the database.
 - [ ] Update this README.md to describe the project.
 - [ ] Improve the styling of the app using Material-UI.
@@ -65,10 +62,8 @@ Link to a read-only version of your scope document or other relevant documentati
 Add additional notes about how to deploy this on a live system
 ​
 ## Authors
-​
 - Lilith Štefánia Bentley
 - Prime Academy Instructors
 ​
-## Acknowledgments
-​
-* Hat tip to anyone who's code was used
+## Acknowledgments​
+- Hat tip to anyone who's code was used
