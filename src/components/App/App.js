@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import {connect} from 'react-redux';
+
 import './App.css';
 
 class App extends Component {
@@ -8,12 +10,14 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Feedback!</h1>
-          <h4><i>Don't forget it!</i></h4>
+          <h2>Don't forget it!</h2>
         </header>
-        <br/>
       </div>
     );
   }
 }
 
-export default App;
+const putReduxStateOnProps = (reduxState) => ({
+  reduxState
+}) // put the redux store values in component props
+export default connect (putReduxStateOnProps) (App);
