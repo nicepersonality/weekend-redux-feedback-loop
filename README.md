@@ -49,10 +49,12 @@ Include one or two screen shots of your project here (optional). Remove if unuse
 - [X] A submit button sends the completed feedback to the database and redirects to a success page.
 - [X] The user can take a new survey from the success page.
 
+- [X] The user can go back to an earlier step and change their score.
+- [X] Displays all of the existing feedback at the route `/admin`. The most recently added feedback appears at the top of the list.
+- [X] Update this README.md to describe the project.
+
 ### Next Steps
-- [X] Allow the user to go back to an earlier step and change their score.
-- [ ] Display all of the existing feedback at the route `/admin`. The most recently added feedback should appear at the top of the list. Allow the user to delete existing feedback. Prompt the user to confirm prior to deleting the feedback from the database.
-- [ ] Update this README.md to describe the project.
+- [ ] Allow the admin to delete existing feedback. Prompt the user to confirm prior to deleting the feedback from the database.
 - [ ] Improve the styling of the app using Material-UI.
 - [ ] Add the ability to flag an existing feedback entry for further review on the `/admin` view.
 - [ ] Deploy the project to Heroku. 
