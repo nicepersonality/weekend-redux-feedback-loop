@@ -1,0 +1,34 @@
+.Admin-table {
+  width: 100%;
+  color: #000;
+  background-color: #fff;
+  margin-top: 5rem;
+  border: none;
+  border-collapse: collapse;
+}
+
+.feelingCol,
+.understandingCol,
+.supportCol {
+  width: 2rem;
+  text-align: center;
+}
+
+thead tr {
+  background-color: #ff0;
+}
+th {
+  position: relative;
+}
+th.feelingCol>span,
+th.understandingCol>span,
+th.supportCol>span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-33deg);
+  transform-origin: 0 0;
+}
+tbody tr:nth-of-type(odd) {
+  background-color: #0ff;
+}
