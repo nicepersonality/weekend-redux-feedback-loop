@@ -9,22 +9,25 @@ class Review extends Component {
     event.preventDefault();
     // console.log('handleSubmit');
     const feedback = this.props.reduxState.feedbackReducer;
+    // package the feedback
     const newFeedback = {
       feeling: feedback.feeling,
       understanding: feedback.understanding,
       support: feedback.support,
       comments: feedback.comments
     }
-    alert(`newFeedback: ${JSON.stringify(newFeedback)}`);
+    // send the feedback
     axios({
       method: 'POST',
       url: '/feedback',
       data: newFeedback
     }).then((response) => {
-      alert(`server response: ${JSON.stringify(response)}`);
+      // continue to the success page
+      this.props.history.push('/success');
     }).catch(function (error) {
-      console.log('error posting image:', error);
-    }); // end POST /gallery
+      console.log('error posting feedback:', error);
+      alert('There was a problem posting your feedback. Try again later maybe?')
+    }); // end POST /feedback
   } // end handleSubmit
 
   render() {
