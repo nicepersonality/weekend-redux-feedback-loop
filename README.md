@@ -36,20 +36,20 @@ Include one or two screen shots of your project here (optional). Remove if unuse
 Link to a read-only version of your scope document or other relevant documentation here (optional). Remove if unused.
 ​
 ### Completed Features
-- [ ] A multi-part form allows users to leave feedback for today.
+- [X] A multi-part form allows users to leave feedback for today.
 - **There are 4 views for the form parts:**
-- [ ] How are you feeling today?
-- [ ] How well are you understanding the content?
-- [ ] How well are you being supported?
-- [ ] Any comments you want to leave?
+- [X] How are you feeling today?
+- [X] How well are you understanding the content?
+- [X] How well are you being supported?
+- [X] Any comments you want to leave?
 
-- [ ] Redux stores feedback data across views.
-- [ ] Each part of the form is in its own route.
-- [ ] Clicking next moves the user to the appropriate step​.
-- [ ] Each step only allows the user to advance to the next step if a score was provided.
-- [ ] The final step of the process allows the user to review their feedback before submitting.
-- [ ] A submit button sends the completed feedback to the database and redirects to a success page.
-- [ ] The user can take a new survey from the success page.
+- [X] Redux stores feedback data across views.
+- [X] Each part of the form is in its own route.
+- [X] Clicking next moves the user to the appropriate step​.
+- [X] Each step only allows the user to advance to the next step if a score was provided.
+- [X] The final step of the process allows the user to review their feedback before submitting.
+- [X] A submit button sends the completed feedback to the database and redirects to a success page.
+- [X] The user can take a new survey from the success page.
 
 ### Next Steps
 - [ ] Allow the user to go back to an earlier step and change their score.
