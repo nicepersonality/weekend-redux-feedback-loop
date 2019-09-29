@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import InputNumber from '../Elements/InputNumber';
 import NextButton from '../Elements/NextButton';
+import BackButton from '../Elements/BackButton';
 
 class Support extends Component {
   render() {
@@ -12,6 +13,10 @@ class Support extends Component {
         <div><label>My support was…
           <InputNumber feedbackType="support" />
         </label></div>
+        <BackButton
+          history={this.props.history}
+          prevPage="/understanding"
+        />
         <NextButton
           required="true"
           requiredValue={this.props.reduxState.feedbackReducer.support}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import axios from 'axios';
+import BackButton from '../Elements/BackButton';
 
 class Review extends Component {
 
@@ -42,6 +43,10 @@ class Review extends Component {
           <li>Support: <strong>{this.props.reduxState.feedbackReducer.support}</strong></li>
           <li>Comments: <strong>{this.props.reduxState.feedbackReducer.comments}</strong></li>
         </ul>
+        <BackButton
+          history={this.props.history}
+          prevPage="/comments"
+        />
         <form onSubmit={this.handleSubmit}>
           <button type="submit">Submit Feedback</button>
         </form>
