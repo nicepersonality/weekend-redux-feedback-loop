@@ -5,7 +5,7 @@ const pool = require('../modules/pool');
 // GET Route
 router.get('/', (req, res) => {
     // Get all of the submissions from the feedback table
-    const sqlText = `SELECT * FROM "feedback" ORDER BY "date" DESC`;
+    const sqlText = `SELECT * FROM "feedback" ORDER BY "date" DESC, "id" DESC`;
     pool.query(sqlText)
     .then((result) => {
         // console.log(result);
