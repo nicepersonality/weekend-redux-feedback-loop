@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import InputTextarea from '../Elements/InputTextarea';
 import NextButton from '../Elements/NextButton';
+import BackButton from '../Elements/BackButton';
 
 class Comments extends Component {
   render() {
@@ -15,6 +16,10 @@ class Comments extends Component {
             placeholder="(Optional)"
           />
         </label></div>
+        <BackButton
+          history={this.props.history}
+          prevPage="/support"
+        />
         <NextButton
           required="false"
           history={this.props.history}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import InputNumber from '../Elements/InputNumber';
 import NextButton from '../Elements/NextButton';
+import BackButton from '../Elements/BackButton';
 
 class Feeling extends Component {
   render() {
@@ -12,6 +13,10 @@ class Feeling extends Component {
         <div><label>I’m feeling…
           <InputNumber feedbackType="feeling" />
         </label></div>
+        <BackButton
+          history={this.props.history}
+          prevPage="/"
+        />
         <NextButton
           required="true"
           requiredValue={this.props.reduxState.feedbackReducer.feeling}
